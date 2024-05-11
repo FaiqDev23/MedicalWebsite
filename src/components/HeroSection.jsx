@@ -25,7 +25,7 @@ const HeroSection = () => {
     </button>
         </div>
         <div className="flex-1 mt-6 lg:mt-0 text-center lg:text-right">
-          <img src="https://via.placeholder.com/400x300" alt="Doctor" className="inline-block rounded-full shadow-lg" />
+          <img src="https://purepng.com/public/uploads/large/purepng.com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-142152685722142y8x.png" alt="Doctor" className="inline-block rounded-full shadow-lg" />
           <div className="mt-4">
             <div className="inline-flex items-center">
               <div className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 mr-2">2400+</div>
