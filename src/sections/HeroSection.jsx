@@ -1,5 +1,6 @@
 // src/components/HeroSection.jsx
 import React from 'react';
+import DoctorProfileCard from '../components/DoctorProfileCard';
 
 const HeroSection = () => {
   return (
@@ -24,18 +25,9 @@ const HeroSection = () => {
       <svg className="w-4 h-4 transform translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
     </button>
         </div>
-        <div className="flex-1 mt-6 lg:mt-0 text-center lg:text-right">
-          <img src="https://purepng.com/public/uploads/large/purepng.com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-142152685722142y8x.png" alt="Doctor" className="inline-block rounded-full shadow-lg" />
-          <div className="mt-4">
-            <div className="inline-flex items-center">
-              <div className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 mr-2">2400+</div>
-              <div className="text-sm text-gray-500">Happy Customers (4.7 Stars)</div>
-            </div>
-            <p className="text-sm text-gray-500 mt-1">
-              Lorem ipsum dolor sit amet, ligula ego. consectetuer adipiscing elit doloras.
-            </p>
-          </div>
-        </div>
+        {/*  */}
+
+        <DoctorProfileCard/>
       </div>
     </div>
   );

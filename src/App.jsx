@@ -1,10 +1,10 @@
 // src/App.jsx
 import React from 'react';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import BookingSection from './components/BookingSection';
-import ServicesSection from './components/ServicesSection';
-import StorySection from './components/StorySection';
+import Navbar from './sections/Navbar';
+import HeroSection from './sections/HeroSection';
+import BookingSection from './sections/BookingSection';
+import ServicesSection from './sections/ServicesSection';
+import HealNetStory from './sections/HealNetStory'
 // Import other sections similarly
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <HeroSection />
       <BookingSection />
       <ServicesSection />
-      <StorySection />
+      <HealNetStory/>
       {/* Render other sections here */}
     </div>
   );
