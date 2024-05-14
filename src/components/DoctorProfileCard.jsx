@@ -1,6 +1,8 @@
 // src/components/DoctorProfileCard.jsx
 import React from 'react';
 import HappyCustomersCard from './HappyCustomerCard';
+import EasyPointment from './EasyPointment';
+import QuoteCard from './QuoteCard';
 const DoctorProfileCard = () => {
   return (
    <div className="flex-1 mt-6 lg:mt-0 text-center lg:text-right relative">
@@ -10,7 +12,10 @@ const DoctorProfileCard = () => {
           <div className="mt-4">
             <div className="inline-flex items-center relative">
              <HappyCustomersCard/>
+             <EasyPointment/>
+             <QuoteCard/>
             </div>
+     
             <p className="text-sm text-gray-500 mt-1">
               Lorem ipsum dolor sit amet, ligula ego. consectetuer adipiscing elit doloras.
             </p>
