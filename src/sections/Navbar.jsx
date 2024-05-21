@@ -1,8 +1,15 @@
-// src/components/Navbar.jsx
-import React from 'react';
-import headerLogo from '../assets/images/logo.png'
+import React, { useState } from 'react';
+import headerLogo from '../assets/images/logo.png';
 
 const Navbar = () => {
+  // State to manage menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to toggle menu visibility
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="bg-white py-4 shadow-md">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -19,14 +26,14 @@ const Navbar = () => {
           Join Us
         </button>
         <div className="lg:hidden flex items-center">
-          <button id="menu-button" className="text-gray-600 focus:outline-none">
+          <button id="menu-button" onClick={toggleMenu} className="text-gray-600 focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>
       </div>
-      <div id="menu" className="hidden lg:hidden flex flex-col items-center space-y-4 mt-4">
+      <div id="menu" className={`${isMenuOpen ? 'flex' : 'hidden'} lg:hidden flex-col items-center space-y-4 mt-4`}>
         <a href="#" className="text-deep-blue font-bold text-base hover:text-deep-blue">Home</a>
         <a href="#" className="text-gray-600 font-semibold text-base hover:text-deep-blue">Services</a>
         <a href="#" className="text-gray-600 font-semibold text-base hover:text-deep-blue">Find Doctors</a>
